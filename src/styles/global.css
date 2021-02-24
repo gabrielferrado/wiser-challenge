@@ -1,0 +1,41 @@
+:root {
+    --background: #FAF5FF;
+    --white: #ffffff;
+    --primary: #9D25B0;
+    --secondary: #383E71;
+    --lightpurple: #989FDB;
+    --error: #FF377F;
+    --black: #130525;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800");
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    background: var(--background);
+}
+
+a {
+  color: var(--primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 430px) {
+    body {
+        background: var(--black);
+        height: 100vh;
+    }
+
+    a {
+        color: var(--white)
+    }
+}

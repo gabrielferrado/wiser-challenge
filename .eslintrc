@@ -1,0 +1,67 @@
+{
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "tsconfig.json"
+      }
+    }
+  },
+  "plugins": ["import", "react", "import", "no-null", "const-case", "prettier"],
+  "extends": [
+      "airbnb",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-curly-newline": "off",
+    "no-unused-expressions": ["error", {"allowShortCircuit": true}],
+    "no-use-before-define": ["off"],
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "prettier/prettier": ["error"],
+    "import/prefer-default-export": "off",
+    "sort-keys": "off",
+    "sort-imports": "off",
+    "no-ternary": "off",
+    "no-undefined": "off",
+    "spaced-comment": "off",
+    "no-null/no-null": 2,
+    "react/prop-types": "off",
+    "no-magic-numbers": ["error", {"ignore": [0, 1]}],
+    "max-lines-per-function": "off",
+    "multiline-comment-style": "off",
+    "const-case/uppercase": "error",
+    "init-declarations": "off",
+    "import/extensions": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [
+        1,
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    "max-lines": [
+        "error",
+        {"max": 300, "skipComments": true, "skipBlankLines": true}
+    ],
+    "@typescript-eslint/ban-ts-comment": [
+        "error",
+      {
+        "ts-expect-error": "allow-with-description",
+        "ts-ignore": false,
+        "ts-nocheck": true,
+        "ts-check": false,
+        "minimumDescriptionLength": 5
+      }
+    ],
+    "radix": "off"
+  }
+}
